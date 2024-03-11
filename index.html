@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mentoria</h1>
+    <h2>Preencha o formulário abaixo para agendar a sua mentoria</h2>
+  </header>
+  <form id="formm">
+    <h3>Informações pessoais</h3>
+    <div class="campo">
+      <fieldset>
+        <label for="name-input">Nome</label>
+        <input id="name-input" type="text" required>
+      </fieldset>
+      <fieldset>
+        <label for="surname-input">Sobrenome</label>
+        <input id="surname-input" type="text" required>
+      </fieldset>
+    </div>
+    <fieldset>
+      <label for="email-input">Email <span>(digite um email válido)</span></label>
+      <input id="email-input" type="email" required>
+    </fieldset>
+    <fieldset>
+      <label for="password-input">Senha <span>(mínimo de 6 caracteres)</span></label>
+      <input id="password-input" type="password" minlength="6" required>
+    </fieldset>
+    <h3>Informações do mentor</h3>
+    <fieldset>
+      <label for="name-mentor-input">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+      <input id="name-mentor-input" type="text" required>
+    </fieldset>
+    <h3>Seus horários disponíveis</h3>
+    <h4>Primeira mentoria</h4>
+    <section>
+      <fieldset id="field-1">
+        <label for="date-input-1">Data <span>(DD/MM/AAAA)</span></label>
+        <input id="date-input-1" type="date" required>
+      </fieldset>
+      <div class="time-container">
+        <fieldset>
+          <label for="time-input-1">Das</label>
+          <input id="time-input-1" type="time" required>
+        </fieldset>
+        <fieldset>
+          <label for="time-input-2">Até</label>
+          <input id="time-input-2" type="time" required>
+        </fieldset>
+      </div>
+    </section>
+    <h4>Segunda mentoria</h4>
+    <section>
+      <fieldset id="field-2">
+        <label for="date-input-2">Data <span>(DD/MM/AAAA)</span></label>
+        <input id="date-input-2" type="date" required>
+      </fieldset>
+      <div class="time-container">
+        <fieldset>
+          <label for="time-input-3">Das</label>
+          <input id="time-input-3" type="time" required>
+        </fieldset>
+        <fieldset>
+          <label for="time-input-4">Até</label>
+          <input id="time-input-4" type="time" required>
+        </fieldset>
+      </div>
+    </section>
+  </form>
+  <footer>
+    <button form="formm">Salvar</button>
+  </footer>
+
+  <div class="background-top"></div>
+</body>
+</html>
